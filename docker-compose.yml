@@ -3,9 +3,9 @@ services:
     web:
       image: nginx:latest
       ports:
-          - "8080:80"
+          - "80:80"
       volumes:
-          - ./public_html:/public_html
+          - ./public_html/:/public_html
           - ./conf.d:/etc/nginx/conf.d
       networks:
           - nginxphp
@@ -46,7 +46,7 @@ services:
         volumes:
           - ./redis:/redis
         ports:
-          - "6378:6379"
+          - "6379:6379"
         depends_on:
           - php
         networks:
