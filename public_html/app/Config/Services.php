@@ -17,6 +17,10 @@ use CodeIgniter\Config\Services as CoreServices;
  */
 class Services extends CoreServices
 {
+	public static function getSecretKey()
+	{
+		return "a@M9&T2pF=+[A'E~";
+	}
 
 	//    public static function example($getShared = true)
 	//    {

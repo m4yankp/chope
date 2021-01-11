@@ -149,7 +149,7 @@ class RedisHandler extends BaseHandler implements \SessionHandlerInterface
 		}
 
 		$redis = new \Redis();
-
+		
 		if (! $redis->connect($this->savePath['host'], $this->savePath['port'], $this->savePath['timeout']))
 		{
 			$this->logger->error('Session: Unable to connect to Redis with the configured settings.');

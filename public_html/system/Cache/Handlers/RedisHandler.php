@@ -113,7 +113,7 @@ class RedisHandler implements CacheInterface
 	public function initialize()
 	{
 		$config = $this->config;
-
+	
 		$this->redis = new \Redis();
 
 		// Try to connect to Redis, if an issue occurs throw a CriticalError exception,
@@ -143,7 +143,7 @@ class RedisHandler implements CacheInterface
 			}
 		}
 		catch (\RedisException $e)
-		{
+		{	
 			// $this->redis->connect() can sometimes throw a RedisException.
 			// We need to convert the exception into a CriticalError exception and throw it.
 			throw new CriticalError('Cache: RedisException occurred with message (' . $e->getMessage() . ').');

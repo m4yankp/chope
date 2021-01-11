@@ -1,0 +1,701 @@
+CRITICAL - 2021-01-10 02:22:22 --> Use of undefined constant localhost - assumed 'localhost' (this will throw an Error in a future version of PHP)
+#0 /public_html/system/CodeIgniter.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/public_html/sy...', 297, Array)
+#1 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#2 {main}
+CRITICAL - 2021-01-10 02:46:30 --> Undefined variable: newData
+#0 /public_html/app/Controllers/Users.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/public_html/ap...', 142, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->profile()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 02:47:00 --> Undefined index: firstName
+#0 /public_html/app/Controllers/Users.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/public_html/ap...', 144, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->profile()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 02:47:01 --> Undefined index: firstName
+#0 /public_html/app/Controllers/Users.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/public_html/ap...', 144, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->profile()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 02:47:22 --> Undefined index: firstName
+#0 /public_html/app/Controllers/Users.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/public_html/ap...', 144, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->profile()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:00:05 --> Class 'App\Controllers\AppModel' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:00:25 --> Table 'test.apps' doesn't exist
+#0 /public_html/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 /public_html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /public_html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /public_html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /public_html/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /public_html/app/Controllers/App.php(38): CodeIgniter\Model->first()
+#6 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#7 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#8 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-10 03:02:19 --> Undefined property: App\Controllers\App::$cache
+#0 /public_html/app/Controllers/App.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/public_html/ap...', 39, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:07:58 --> Cannot use object of type App\Models\AppModel as array
+#0 /public_html/system/View/View.php(246): include()
+#1 /public_html/system/Common.php(1119): CodeIgniter\View\View->render('apps', Array, true)
+#2 /public_html/app/Controllers/App.php(41): view('apps')
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 03:10:07 --> Call to undefined method App\Models\AppModel::results
+#0 /public_html/app/Controllers/App.php(38): CodeIgniter\Model->__call('results', Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:10:25 --> Call to undefined method App\Models\AppModel::results
+#0 /public_html/app/Controllers/App.php(38): CodeIgniter\Model->__call('results', Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:12:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:13:43 --> Undefined variable: apps
+#0 /public_html/app/Views/apps.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/public_html/ap...', 40, Array)
+#1 /public_html/system/View/View.php(246): include('/public_html/ap...')
+#2 /public_html/system/Common.php(1119): CodeIgniter\View\View->render('apps', Array, true)
+#3 /public_html/app/Controllers/App.php(43): view('apps')
+#4 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-10 03:14:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:14:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:14:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:17:26 --> Undefined property: App\Controllers\App::$cache
+#0 /public_html/app/Controllers/App.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/public_html/ap...', 40, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:17:57 --> Call to a member function save() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:38:25 --> Undefined property: App\Controllers\App::$load
+#0 /public_html/app/Controllers/App.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/public_html/ap...', 11, Array)
+#1 /public_html/system/CodeIgniter.php(890): App\Controllers\App->__construct()
+#2 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:38:26 --> Undefined property: App\Controllers\App::$load
+#0 /public_html/app/Controllers/App.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/public_html/ap...', 11, Array)
+#1 /public_html/system/CodeIgniter.php(890): App\Controllers\App->__construct()
+#2 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 03:40:26 --> Call to undefined function App\Controllers\random_string()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 03:43:07 --> Undefined index: name
+#0 /public_html/app/Views/apps.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/public_html/ap...', 43, Array)
+#1 /public_html/system/View/View.php(246): include('/public_html/ap...')
+#2 /public_html/system/Common.php(1119): CodeIgniter\View\View->render('apps', Array, true)
+#3 /public_html/app/Controllers/App.php(48): view('apps')
+#4 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-10 03:43:18 --> Trying to get property 'name' of non-object
+#0 /public_html/app/Views/apps.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/public_html/ap...', 43, Array)
+#1 /public_html/system/View/View.php(246): include('/public_html/ap...')
+#2 /public_html/system/Common.php(1119): CodeIgniter\View\View->render('apps', Array, true)
+#3 /public_html/app/Controllers/App.php(48): view('apps')
+#4 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-10 04:31:50 --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+#0 /public_html/app/Controllers/Dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/public_html/ap...', 8, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Dashboard->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 04:34:54 --> Undefined variable: session
+#0 /public_html/app/Controllers/Users.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/public_html/ap...', 41, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 04:39:05 --> syntax error, unexpected ';', expecting ')'
+#0 /public_html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('app')
+#1 /public_html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('app')
+#2 /public_html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 04:41:17 --> Trying to get property 'appName' of non-object
+#0 /public_html/app/Views/apps.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/public_html/ap...', 43, Array)
+#1 /public_html/system/View/View.php(246): include('/public_html/ap...')
+#2 /public_html/system/Common.php(1119): CodeIgniter\View\View->render('apps', Array, true)
+#3 /public_html/app/Controllers/App.php(47): view('apps')
+#4 /public_html/system/CodeIgniter.php(918): App\Controllers\App->index()
+#5 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\App))
+#6 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-10 09:06:56 --> Undefined variable: data
+#0 /public_html/app/Controllers/Api.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/public_html/ap...', 17, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 09:07:04 --> Undefined variable: data
+#0 /public_html/app/Controllers/Api.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/public_html/ap...', 17, Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 09:37:45 --> Class 'Firebase\JWT\JWT' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 09:53:14 --> Class 'Firebase\JWT\JWT' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 09:55:51 --> Class 'Firebase\JWT\JWT' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 09:57:07 --> Class 'Firebase\JWT\JWT' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:13:59 --> Class 'App\Filters\Api' not found
+#0 /public_html/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('api/auth', 'before')
+#1 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-01-10 10:14:00 --> Class 'App\Filters\Api' not found
+#0 /public_html/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('api/auth', 'before')
+#1 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-01-10 10:16:09 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:16:11 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:16:23 --> Declaration of App\Controllers\Api::index(CodeIgniter\HTTP\RequestInterface $request) should be compatible with CodeIgniter\RESTful\ResourceController::index()
+#0 /public_html/app/Controllers/Api.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', '/public_html/ap...', 44, Array)
+#1 /public_html/system/Autoloader/Autoloader.php(365): require_once('/public_html/ap...')
+#2 /public_html/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/public_html/ap...')
+#3 /public_html/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 [internal function]: spl_autoload_call('App\\Controllers...')
+#6 /public_html/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#7 /public_html/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#8 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-10 10:16:25 --> Declaration of App\Controllers\Api::index(CodeIgniter\HTTP\RequestInterface $request) should be compatible with CodeIgniter\RESTful\ResourceController::index()
+#0 /public_html/app/Controllers/Api.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', '/public_html/ap...', 44, Array)
+#1 /public_html/system/Autoloader/Autoloader.php(365): require_once('/public_html/ap...')
+#2 /public_html/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/public_html/ap...')
+#3 /public_html/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 [internal function]: spl_autoload_call('App\\Controllers...')
+#6 /public_html/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#7 /public_html/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#8 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-01-10 10:16:34 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:16:46 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:16:49 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:17:03 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->create()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:17:16 --> Declaration of App\Controllers\Api::index(CodeIgniter\HTTP\RequestInterface $request) should be compatible with CodeIgniter\RESTful\ResourceController::index()
+#0 /public_html/app/Controllers/Api.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', '/public_html/ap...', 44, Array)
+#1 /public_html/system/Router/Router.php(583): include_once('/public_html/ap...')
+#2 /public_html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('api')
+#3 /public_html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('api')
+#4 /public_html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 10:17:19 --> Declaration of App\Controllers\Api::index(CodeIgniter\HTTP\RequestInterface $request) should be compatible with CodeIgniter\RESTful\ResourceController::index()
+#0 /public_html/app/Controllers/Api.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', '/public_html/ap...', 44, Array)
+#1 /public_html/system/Router/Router.php(583): include_once('/public_html/ap...')
+#2 /public_html/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('api')
+#3 /public_html/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('api')
+#4 /public_html/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 10:17:45 --> Call to a member function getServer() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:18:35 --> Call to a member function get_request_header() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:18:37 --> Call to a member function get_request_header() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:21:08 --> Call to undefined method App\Controllers\Api::getHeaders()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:21:28 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get_headers()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:21:38 --> Too few arguments to function CodeIgniter\HTTP\Message::getHeader(), 0 passed in /public_html/app/Controllers/Api.php on line 48 and exactly 1 expected
+#0 /public_html/app/Controllers/Api.php(48): CodeIgniter\HTTP\Message->getHeader()
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 10:23:34 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:23:50 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:27:18 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:29:36 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:29:44 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:29:45 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:29:55 --> Too few arguments to function App\Controllers\Api::__construct(), 0 passed in /public_html/system/CodeIgniter.php on line 890 and exactly 1 expected
+#0 /public_html/system/CodeIgniter.php(890): App\Controllers\Api->__construct()
+#1 /public_html/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:30:06 --> Call to a member function request_headers() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:30:07 --> Call to a member function request_headers() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:30:14 --> Call to a member function request_headers() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:31:24 --> Call to a member function request_headers() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:33:48 --> Call to a member function getServer() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:33:58 --> Call to a member function getServer() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:33:59 --> Call to a member function getServer() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:34:08 --> Call to a member function request_headers() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:34:10 --> Call to a member function request_headers() on null
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:44:38 --> Cannot access protected property CodeIgniter\HTTP\Header::$value
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:44:48 --> Cannot use object of type CodeIgniter\HTTP\Header as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:44:55 --> Cannot access protected property CodeIgniter\HTTP\Header::$value
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:45:32 --> Cannot access protected property CodeIgniter\HTTP\Header::$value
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:46:06 --> Cannot access protected property CodeIgniter\HTTP\Header::$value
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:47:16 --> Cannot use object of type CodeIgniter\HTTP\Header as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:47:44 --> Cannot access protected property CodeIgniter\HTTP\Header::$value
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:49:10 --> Call to undefined function App\Controllers\split()
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:52:52 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:55:09 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:55:33 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:56:06 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 10:56:32 --> Class 'App\Controllers\Services' not found
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:02:39 --> Signature verification failed
+#0 /public_html/app/Controllers/Api.php(54): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI...', 'a@M9&T2pF=+[A'E...', Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:02:43 --> Signature verification failed
+#0 /public_html/app/Controllers/Api.php(54): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI...', 'a@M9&T2pF=+[A'E...', Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:03:10 --> Signature verification failed
+#0 /public_html/app/Controllers/Api.php(54): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI...', 'a@M9&T2pF=+[A'E...', Array)
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:03:15 --> Algorithm not allowed
+#0 /public_html/app/Controllers/Api.php(54): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI...', 'a@M9&T2pF=+[A'E...')
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:03:26 --> Algorithm not allowed
+#0 /public_html/app/Controllers/Api.php(55): Firebase\JWT\JWT::decode('eyJhbGciOiJIUzI...', 'a@M9&T2pF=+[A'E...')
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:03:49 --> Algorithm not allowed
+#0 /public_html/app/Controllers/Api.php(55): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'a@M9&T2pF=+[A'E...')
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:04:05 --> Algorithm not allowed
+#0 /public_html/app/Controllers/Api.php(54): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'a@M9&T2pF=+[A'E...')
+#1 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#2 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-10 11:25:33 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:25:41 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:25:56 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:26:27 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:26:37 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:27:36 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /public_html/system/CodeIgniter.php(918): App\Controllers\Users->index()
+#1 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-10 11:40:51 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(59): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:40:52 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(59): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:41:07 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(59): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:41:27 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(59): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:41:53 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(60): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:42:05 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(60): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:42:22 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(60): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:44:01 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(61): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-10 11:45:21 --> Argument 1 passed to CodeIgniter\Validation\Validation::withRequest() must implement interface CodeIgniter\HTTP\RequestInterface, null given, called in /public_html/system/Controller.php on line 217
+#0 /public_html/system/Controller.php(217): CodeIgniter\Validation\Validation->withRequest(NULL)
+#1 /public_html/app/Controllers/Users.php(54): CodeIgniter\Controller->validate(Array, Array)
+#2 /public_html/app/Controllers/Api.php(60): App\Controllers\Users->login()
+#3 /public_html/system/CodeIgniter.php(918): App\Controllers\Api->index()
+#4 /public_html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 /public_html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /public_html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

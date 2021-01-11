@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "8054af15-b1d6-4dba-aac4-285aa33e5471",
+		"name": "Chope",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create App Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3IiwiYXBwTmFtZSI6Ik5ldyBBcHAiLCJjbGllbnRpZCI6Ik1heWFuazVmZmFkYTMwNWUwZTciLCJjbGllbnRrZXkiOiIxNWZmYWRhMzA1ZTBmMiIsInVzZXJJZCI6IjEifQ.iZW-GHpqqG7lkkmVz5IQgK50Y7ou4jJgpje8yIiaV-g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clientId",
+							"value": "Mayank5ffada305e0e7",
+							"type": "text"
+						},
+						{
+							"key": "clientKey",
+							"value": "15ffada305e0f2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api"
+					]
+				},
+				"description": "Create a App token using client id and client token"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User With App Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3IiwiYXBwTmFtZSI6Ik5ldyBBcHAiLCJjbGllbnRpZCI6Ik1heWFuazVmZmFkYTMwNWUwZTciLCJjbGllbnRrZXkiOiIxNWZmYWRhMzA1ZTBmMiIsInVzZXJJZCI6IjEifQ.iZW-GHpqqG7lkkmVz5IQgK50Y7ou4jJgpje8yIiaV-g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clientId",
+							"value": "Mayank5ffada305e0e7",
+							"type": "text"
+						},
+						{
+							"key": "clientKey",
+							"value": "15ffada305e0f2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api"
+					]
+				},
+				"description": "Login User With App Token and User Credentials"
+			},
+			"response": []
+		},
+		{
+			"name": "Register User With App Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3IiwiYXBwTmFtZSI6Ik5ldyBBcHAiLCJjbGllbnRpZCI6Ik1heWFuazVmZmFkYTMwNWUwZTciLCJjbGllbnRrZXkiOiIxNWZmYWRhMzA1ZTBmMiIsInVzZXJJZCI6IjEifQ.iZW-GHpqqG7lkkmVz5IQgK50Y7ou4jJgpje8yIiaV-g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "clientId",
+							"value": "Mayank5ffada305e0e7",
+							"type": "text"
+						},
+						{
+							"key": "clientKey",
+							"value": "15ffada305e0f2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api"
+					]
+				},
+				"description": "Register a new User with API Token"
+			},
+			"response": []
+		}
+	]
+}

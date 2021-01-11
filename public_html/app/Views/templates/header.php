@@ -26,6 +26,9 @@
           <li class="nav-item <?= ($uri->getSegment(1) == 'profile' ? 'active' : null) ?>">
             <a class="nav-link" href="/users/profile">Profile</a>
           </li>
+          <li class="nav-item <?= ($uri->getSegment(1) == 'profile' ? 'active' : null) ?>">
+            <a class="nav-link" href="/App/index">Apps</a>
+          </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
           <li class="nav-item">

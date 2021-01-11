@@ -31,7 +31,7 @@ services:
     mysql:
       image: mysql:latest
       volumes:
-        - ./db:/var/lib/mysql
+        - ./db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
       command: --default-authentication-plugin=mysql_native_password
       ports:
         - 3306:3306
@@ -40,7 +40,7 @@ services:
         MYSQL_DATABASE: test
       networks:
         - nginxphp
-
+    
     redis:
         image: redis:latest
         volumes:

@@ -6,6 +6,7 @@ use App\Models\UserModel;
 class Users extends BaseController
 {
 	private $cache;
+	protected $request;
 	function __construct()
 	{
 		$this->cache = \Config\Services::cache();
@@ -18,35 +19,49 @@ class Users extends BaseController
 
 		if ($this->request->getMethod() == 'post') {
 			//let's do the validation here
-			$rules = [
+			
+			$user = $this->login();
+			if($user)
+			{
+				$this->setUserSession($user);
+				return redirect()->to('./dashboard');
+			}
+			else
+			{
+				$data['validation'] = $this->validator;
+			}
+		}
+		if(session()->get('id'))
+		{
+			return redirect()->to('./dashboard');
+		}
+		echo view('templates/header', $data);
+		echo view('login');
+		echo view('templates/footer');
+	}
+
+	public function login(){
+		$rules = [
 				'email' => 'required|min_length[6]|max_length[50]|valid_email',
 				'password' => 'required|min_length[8]|max_length[255]|validateUser[email,password]',
 			];
 
-			$errors = [
-				'password' => [
-					'validateUser' => 'Email or Password don\'t match'
-				]
-			];
+		$errors = [
+			'password' => [
+				'validateUser' => 'Email or Password don\'t match'
+			]
+		];
 
-			if (! $this->validate($rules, $errors)) {
-				$data['validation'] = $this->validator;
-			}else{
-				$model = new UserModel();
+		if (!$this->validate($rules, $errors)) {
+			return false;
+		}else{
+			$model = new UserModel();
 
-				$user = $model->where('email', $this->request->getVar('email'))
-											->first();
+			$user = $model->where('email', $this->request->getVar('email'))
+										->first();
+			return $user;
 
-				$this->setUserSession($user);
-				//$session->setFlashdata('success', 'Successful Registration');
-				return redirect()->to('./dashboard');
-
-			}
 		}
-
-		echo view('templates/header', $data);
-		echo view('login');
-		echo view('templates/footer');
 	}
 
 	private function setUserSession($user){
@@ -57,7 +72,7 @@ class Users extends BaseController
 			'email' => $user['email'],
 			'isLoggedIn' => true,
 		];
-
+		$this->cache->save('Login done by user'.$data['id'],$data['id'],3600);
 		session()->set($data);
 		return true;
 	}
@@ -87,7 +102,7 @@ class Users extends BaseController
 					'password' => $this->request->getVar('password'),
 				];
 				$model->save($newData);
-				$this->cache->save('registered','yes');
+				$this->cache->save('registeration done by '.$newData['firstName'],$newData['firstName'],3600);
 				$session = session();
 				$session->setFlashdata('success', 'Successful Registration');
 				return redirect()->to('./');
@@ -123,7 +138,7 @@ class Users extends BaseController
 			if (! $this->validate($rules)) {
 				$data['validation'] = $this->validator;
 			}else{
-
+				$this->cache->save('Profile Updated',session()->get('id'),3600);
 				$newData = [
 					'id' => session()->get('id'),
 					'firstname' => $this->request->getPost('firstname'),
@@ -139,15 +154,16 @@ class Users extends BaseController
 
 			}
 		}
-		var_dump($this->cache);
-		var_dump($this->cache->save('login','yes'));
+		
 		$data['user'] = $model->where('id', session()->get('id'))->first();
+		$this->cache->save('Profile Opened by',$data['user'],3600);
 		echo view('templates/header', $data);
 		echo view('profile');
 		echo view('templates/footer');
 	}
 
 	public function logout(){
+		$this->cache->save('Logged Out By User'.session()->get("id"),session()->get("id"),3600);
 		session()->destroy();
 		return redirect()->to('/');
 	}
